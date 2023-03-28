@@ -15,6 +15,7 @@
 
 // Console.WriteLine($" New version of {randNumber} is {newNumber} ");
 
+
 // Task 2. Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
 
 // int MaxNumber(int num)
