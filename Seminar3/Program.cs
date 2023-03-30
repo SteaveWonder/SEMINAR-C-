@@ -14,12 +14,6 @@
 // ShowRange(quadNum);
 
 
-
-
-
-
-
-
 // Task 2. Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка.
 
 // int Quad(int x, int y)
@@ -36,13 +30,6 @@
 // Console.Write("Input Y quadrant: ");
 // int y = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine(Quad(x, y));
-
-
-
-
-
-
-
 
 
 
@@ -68,14 +55,6 @@
 // int y2 = Convert.ToInt32(Console.ReadLine());
 
 // Console.WriteLine(Math.Round(Length(x1, y1, x2, y2), 2));
-
-
-
-
-
-
-
-
 
 
 
