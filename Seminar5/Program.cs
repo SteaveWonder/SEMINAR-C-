@@ -101,3 +101,36 @@
 
 //Task 5.Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. 
 //Результат запишите в новом массиве.
+
+int[] createRandomArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int[size];
+    for (int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValue, maxValue + 1);
+    return array;
+}
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+    Console.WriteLine();
+}
+
+int[] FoundNum(int[] array)
+{
+    int[] newArray = new int[array.Length / 2];
+    for (int i = 0; i < newArray.Length; i++)
+        newArray[i] = array[i] * array[array.Length - 1 - i];
+    return newArray;
+}
+Console.WriteLine("Input array size ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input min value ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input max value ");
+int max = Convert.ToInt32(Console.ReadLine());
+int[] newArray = createRandomArray(size, min, max);
+int[] result = FoundNum(newArray);
+ShowArray(newArray);
+Console.WriteLine();
+ShowArray(result);
